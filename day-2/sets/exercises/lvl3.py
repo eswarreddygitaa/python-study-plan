@@ -19,15 +19,15 @@ else:
 print("""
 Differences between String, List, Tuple, and Set:
 
-- **String**: A sequence of characters. Immutable (cannot be changed). Example: "Hello"
-- **List**: An ordered, mutable collection that allows duplicate items. Example: [1, 2, 3, 2]
-- **Tuple**: An ordered, immutable collection that allows duplicates. Example: (1, 2, 3, 2)
-- **Set**: An unordered collection of unique items. No duplicates allowed. Example: {1, 2, 3}
+- String: A sequence of characters. Immutable (cannot be changed). Example: "Hello"
+- List: An ordered, mutable collection that allows duplicate items. Example: [1, 2, 3, 2]
+- Tuple: An ordered, immutable collection that allows duplicates. Example: (1, 2, 3, 2)
+- Set: An unordered collection of unique items. No duplicates allowed. Example: {1, 2, 3}
 """)
 
 #3  # Find how many unique words are used in the sentence
 sentence = "I am a teacher and I love to inspire and teach people."
-words = sentence.lower().replace('.', '').split()
+words = sentence.lower().split()
 unique_words = set(words)
 print("Words in sentence:", words)
 print("Unique words:", unique_words)
